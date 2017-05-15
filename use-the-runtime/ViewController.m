@@ -7,8 +7,9 @@
 
 #import "ViewController.h"
 #import <objc/message.h>
-#import "YJSecondViewController.h"
 #import "YJPerson.h"
+#import "YJAlertViewController.h"
+#import "YJNextViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -38,10 +39,10 @@
     [super viewDidLoad];
     self.title = @"runtime的使用";
     self.view.backgroundColor = [UIColor whiteColor];
-
     if ([self respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
     
     _tableView.frame = self.view.bounds;
     _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
@@ -52,6 +53,9 @@
     [self addCellWithTitle:@"Method Swizzling" Method:@"swizzling"];
     [self addCellWithTitle:@"properties-ivars-methods" Method:@"attributes"];
     [self addCellWithTitle:@"encodeObjc" Method:@"encodeObjc"];
+    [self addCellWithTitle:@"Associate Demo" Method:@"showAlert"];
+    
+    
 }
 
 - (void) addCellWithTitle:(NSString *)title Method:(NSString *)method {
@@ -89,7 +93,7 @@
 
 - (void)swizzling {
     NSLog(@"see ViewController+Swizzling load Method");
-    [self.navigationController pushViewController:[YJSecondViewController new] animated:YES];
+    [self.navigationController pushViewController:[YJNextViewController new] animated:YES];
 }
 
 - (void)attributes {
@@ -111,7 +115,14 @@
     [NSKeyedArchiver archiveRootObject:aP toFile:archivePath];
     id person = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
     NSLog(@"%@\ncode in Person.m",person);
-    
 }
+
+- (void)showAlert {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    YJAlertViewController *altVC = [sb instantiateViewControllerWithIdentifier:@"alertViewController"];
+    [self.navigationController pushViewController:altVC animated:YES];
+}
+
 
 @end

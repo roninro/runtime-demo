@@ -15,7 +15,10 @@
 		D8214EB91EA49EC000D70FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8214EB71EA49EC000D70FED /* LaunchScreen.storyboard */; };
 		D8214EC21EA4AFA800D70FED /* YJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D8214EC11EA4AFA800D70FED /* YJPerson.m */; };
 		D8214EC81EA4B06B00D70FED /* ViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D8214EC71EA4B06B00D70FED /* ViewController+Swizzling.m */; };
-		D8214ECB1EA4B37A00D70FED /* YJSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8214ECA1EA4B37A00D70FED /* YJSecondViewController.m */; };
+		D8214ECB1EA4B37A00D70FED /* YJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8214ECA1EA4B37A00D70FED /* YJAlertViewController.m */; };
+		D8BC29021EC97C03008DD3C2 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BC29011EC97C03008DD3C2 /* UIAlertView+Block.m */; };
+		D8BC29071EC99A31008DD3C2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D8BC29061EC99A31008DD3C2 /* README.md */; };
+		D8BC290A1EC9A6BE008DD3C2 /* YJNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BC29091EC9A6BE008DD3C2 /* YJNextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +36,13 @@
 		D8214EC11EA4AFA800D70FED /* YJPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPerson.m; sourceTree = "<group>"; };
 		D8214EC61EA4B06B00D70FED /* ViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+Swizzling.h"; sourceTree = "<group>"; };
 		D8214EC71EA4B06B00D70FED /* ViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Swizzling.m"; sourceTree = "<group>"; };
-		D8214EC91EA4B37A00D70FED /* YJSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSecondViewController.h; sourceTree = "<group>"; };
-		D8214ECA1EA4B37A00D70FED /* YJSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSecondViewController.m; sourceTree = "<group>"; };
+		D8214EC91EA4B37A00D70FED /* YJAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAlertViewController.h; sourceTree = "<group>"; };
+		D8214ECA1EA4B37A00D70FED /* YJAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAlertViewController.m; sourceTree = "<group>"; };
+		D8BC29001EC97C03008DD3C2 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		D8BC29011EC97C03008DD3C2 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
+		D8BC29061EC99A31008DD3C2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D8BC29081EC9A6BE008DD3C2 /* YJNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNextViewController.h; sourceTree = "<group>"; };
+		D8BC29091EC9A6BE008DD3C2 /* YJNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 		D8214E9D1EA49EC000D70FED = {
 			isa = PBXGroup;
 			children = (
+				D8BC29061EC99A31008DD3C2 /* README.md */,
 				D8214EA81EA49EC000D70FED /* use-the-runtime */,
 				D8214EA71EA49EC000D70FED /* Products */,
 			);
@@ -67,19 +76,14 @@
 		D8214EA81EA49EC000D70FED /* use-the-runtime */ = {
 			isa = PBXGroup;
 			children = (
-				D8214EC01EA4AFA800D70FED /* YJPerson.h */,
-				D8214EC11EA4AFA800D70FED /* YJPerson.m */,
 				D8214EAC1EA49EC000D70FED /* AppDelegate.h */,
 				D8214EAD1EA49EC000D70FED /* AppDelegate.m */,
-				D8214EAF1EA49EC000D70FED /* ViewController.h */,
-				D8214EB01EA49EC000D70FED /* ViewController.m */,
-				D8214EC91EA4B37A00D70FED /* YJSecondViewController.h */,
-				D8214ECA1EA4B37A00D70FED /* YJSecondViewController.m */,
-				D8214EC61EA4B06B00D70FED /* ViewController+Swizzling.h */,
-				D8214EC71EA4B06B00D70FED /* ViewController+Swizzling.m */,
 				D8214EB21EA49EC000D70FED /* Main.storyboard */,
-				D8214EB51EA49EC000D70FED /* Assets.xcassets */,
 				D8214EB71EA49EC000D70FED /* LaunchScreen.storyboard */,
+				D8214EB51EA49EC000D70FED /* Assets.xcassets */,
+				D8BC28FD1EC93C19008DD3C2 /* Model */,
+				D8BC28FE1EC93C4F008DD3C2 /* Controller */,
+				D8BC28FF1EC93C69008DD3C2 /* Catagory */,
 				D8214EBA1EA49EC000D70FED /* Info.plist */,
 				D8214EA91EA49EC000D70FED /* Supporting Files */,
 			);
@@ -92,6 +96,39 @@
 				D8214EAA1EA49EC000D70FED /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8BC28FD1EC93C19008DD3C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8214EC01EA4AFA800D70FED /* YJPerson.h */,
+				D8214EC11EA4AFA800D70FED /* YJPerson.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D8BC28FE1EC93C4F008DD3C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8214EAF1EA49EC000D70FED /* ViewController.h */,
+				D8214EB01EA49EC000D70FED /* ViewController.m */,
+				D8BC29081EC9A6BE008DD3C2 /* YJNextViewController.h */,
+				D8BC29091EC9A6BE008DD3C2 /* YJNextViewController.m */,
+				D8214EC91EA4B37A00D70FED /* YJAlertViewController.h */,
+				D8214ECA1EA4B37A00D70FED /* YJAlertViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D8BC28FF1EC93C69008DD3C2 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				D8214EC61EA4B06B00D70FED /* ViewController+Swizzling.h */,
+				D8214EC71EA4B06B00D70FED /* ViewController+Swizzling.m */,
+				D8BC29001EC97C03008DD3C2 /* UIAlertView+Block.h */,
+				D8BC29011EC97C03008DD3C2 /* UIAlertView+Block.m */,
+			);
+			name = Catagory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8BC29021EC97C03008DD3C2 /* UIAlertView+Block.m in Sources */,
 				D8214EB11EA49EC000D70FED /* ViewController.m in Sources */,
-				D8214ECB1EA4B37A00D70FED /* YJSecondViewController.m in Sources */,
+				D8214ECB1EA4B37A00D70FED /* YJAlertViewController.m in Sources */,
 				D8214EAE1EA49EC000D70FED /* AppDelegate.m in Sources */,
 				D8214EAB1EA49EC000D70FED /* main.m in Sources */,
 				D8214EC21EA4AFA800D70FED /* YJPerson.m in Sources */,
+				D8BC290A1EC9A6BE008DD3C2 /* YJNextViewController.m in Sources */,
+				D8BC29071EC99A31008DD3C2 /* README.md in Sources */,
 				D8214EC81EA4B06B00D70FED /* ViewController+Swizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

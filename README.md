@@ -27,3 +27,10 @@ Method swizzling 用于改变一个已经存在的`selector`的实现。通过�
 
 1. 使用`class_copyIvarList` 方法获取到变量数组。
 2. 遍历数组, 实现`encode`和`decode`。
+
+
+## runtime 关联对象 AssociatedObject
+
+为某个对象添加关联对象。【类因为某些情况无法创建子类实例 】
+
+例如 catagery 中，为类添加属性。
