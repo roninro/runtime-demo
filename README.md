@@ -31,6 +31,9 @@ Method swizzling 用于改变一个已经存在的`selector`的实现。通过�
 
 ## runtime 关联对象 AssociatedObject
 
-为某个对象添加关联对象。【类因为某些情况无法创建子类实例 】
+对已经存在的类在扩展中添加自定义的属性
 
-例如 catagery 中，为类添加属性。
+- 添加私有属性用于更好地去实现细节. AFNetworking在 UIImageView 的category上用了关联对象来[保持一个operation对象](https://github.com/AFNetworking/AFNetworking/blob/2.1.0/UIKit%2BAFNetworking/UIImageView%2BAFNetworking.m#L57-L63)，用于从网络上某URL异步地获取一张图片。
+
+- 添加public属性来增强category的功能.AFNetworking的例子中的 UIImageView category，它的 [imageResponseSerializer方法](https://github.com/AFNetworking/AFNetworking/blob/2.1.0/UIKit%2BAFNetworking/UIImageView%2BAFNetworking.h#L60-L65)允许图片通过一个滤镜来显示、或在缓存到硬盘之前改变图片的内容。
+- 创建一个用于KVO的关联观察者.

@@ -19,6 +19,7 @@
 		D8BC29021EC97C03008DD3C2 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BC29011EC97C03008DD3C2 /* UIAlertView+Block.m */; };
 		D8BC29071EC99A31008DD3C2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D8BC29061EC99A31008DD3C2 /* README.md */; };
 		D8BC290A1EC9A6BE008DD3C2 /* YJNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BC29091EC9A6BE008DD3C2 /* YJNextViewController.m */; };
+		D8BC29111ECA90B5008DD3C2 /* YJSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BC29101ECA90B5008DD3C2 /* YJSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		D8BC29061EC99A31008DD3C2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D8BC29081EC9A6BE008DD3C2 /* YJNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNextViewController.h; sourceTree = "<group>"; };
 		D8BC29091EC9A6BE008DD3C2 /* YJNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNextViewController.m; sourceTree = "<group>"; };
+		D8BC290F1ECA90B5008DD3C2 /* YJSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSwizzle.h; sourceTree = "<group>"; };
+		D8BC29101ECA90B5008DD3C2 /* YJSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSwizzle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +79,13 @@
 		D8214EA81EA49EC000D70FED /* use-the-runtime */ = {
 			isa = PBXGroup;
 			children = (
-				D8214EAC1EA49EC000D70FED /* AppDelegate.h */,
-				D8214EAD1EA49EC000D70FED /* AppDelegate.m */,
-				D8214EB21EA49EC000D70FED /* Main.storyboard */,
-				D8214EB71EA49EC000D70FED /* LaunchScreen.storyboard */,
-				D8214EB51EA49EC000D70FED /* Assets.xcassets */,
 				D8BC28FD1EC93C19008DD3C2 /* Model */,
 				D8BC28FE1EC93C4F008DD3C2 /* Controller */,
 				D8BC28FF1EC93C69008DD3C2 /* Catagory */,
+				D8BC290B1ECA89F3008DD3C2 /* AppDelegate */,
+				D8214EB21EA49EC000D70FED /* Main.storyboard */,
+				D8214EB71EA49EC000D70FED /* LaunchScreen.storyboard */,
+				D8214EB51EA49EC000D70FED /* Assets.xcassets */,
 				D8214EBA1EA49EC000D70FED /* Info.plist */,
 				D8214EA91EA49EC000D70FED /* Supporting Files */,
 			);
@@ -125,10 +127,21 @@
 			children = (
 				D8214EC61EA4B06B00D70FED /* ViewController+Swizzling.h */,
 				D8214EC71EA4B06B00D70FED /* ViewController+Swizzling.m */,
+				D8BC290F1ECA90B5008DD3C2 /* YJSwizzle.h */,
+				D8BC29101ECA90B5008DD3C2 /* YJSwizzle.m */,
 				D8BC29001EC97C03008DD3C2 /* UIAlertView+Block.h */,
 				D8BC29011EC97C03008DD3C2 /* UIAlertView+Block.m */,
 			);
 			name = Catagory;
+			sourceTree = "<group>";
+		};
+		D8BC290B1ECA89F3008DD3C2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D8214EAC1EA49EC000D70FED /* AppDelegate.h */,
+				D8214EAD1EA49EC000D70FED /* AppDelegate.m */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +219,7 @@
 				D8BC29021EC97C03008DD3C2 /* UIAlertView+Block.m in Sources */,
 				D8214EB11EA49EC000D70FED /* ViewController.m in Sources */,
 				D8214ECB1EA4B37A00D70FED /* YJAlertViewController.m in Sources */,
+				D8BC29111ECA90B5008DD3C2 /* YJSwizzle.m in Sources */,
 				D8214EAE1EA49EC000D70FED /* AppDelegate.m in Sources */,
 				D8214EAB1EA49EC000D70FED /* main.m in Sources */,
 				D8214EC21EA4AFA800D70FED /* YJPerson.m in Sources */,
